@@ -6,7 +6,17 @@ namespace SwaggerAvid
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            const string baseAddress = "https://back.platform.main-dev.factory5.ai/api";
+            ApiHelper.InitializeClient(baseAddress);
+
+            #region Вызовы
+            // Requests.GetNodes();
+            // Requests.GetNode();
+            // Requests.DeleteNode();
+            // Requests.PutNode();
+            // Requests.PostNode();
+            #endregion
+       
         }
     }
 }
